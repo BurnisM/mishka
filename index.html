@@ -63,11 +63,18 @@
         </div>
         <div class="menu__block">
           <div class="menu__block-item">
-            <span class="menu__item-icon"></span>
+            <button
+              type="button"
+              class="button menu__item-button menu__item-button- -search"
+            ></button>
             <span class="menu__item-text">Поиск по сайту</span>
           </div>
           <div class="menu__block-item">
-            <span class="menu__item-icon"></span>
+            <button
+              type="button"
+              class="button menu__item-button menu__item-button- -cart"
+              aria-label="открыть корзину"
+            ></button>
             <span class="menu__item-text">Корзина: пока пуста</span>
           </div>
         </div>
@@ -84,7 +91,27 @@
         </div>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section class="hero">
+        <h2 class="hero__title">Милые штуки ручной работы для дома</h2>
+        <div class="hero__wrapper">
+          <button
+            class="button hero__wrapper-button hero__wrapper-button- -interior"
+            type="button"
+            aria-label="Предметы интерьера"
+          >
+            Предметы интерьера
+          </button>
+          <button
+            class="button hero__wrapper-button hero__wrapper-button- -toy"
+            type="button"
+            aria-label="Детские игрушки"
+          >
+            Детские игрушки
+          </button>
+        </div>
+      </section>
+    </main>
     <footer class="footer"></footer>
   </body>
 </html>
