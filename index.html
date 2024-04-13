@@ -65,9 +65,18 @@
           <div class="menu__block-item">
             <button
               type="button"
-              class="button menu__item-button menu__item-button- -search"
-            ></button>
-            <span class="menu__item-text">Поиск по сайту</span>
+              class="button menu__item-button menu__item-button- -search">
+            </button>
+            <div class="popover-container">
+              <form class="popover-container__form" action="https://echo.htmlacademy.ru/" method="get">
+                <div class="popover-container__form-wrapper">
+                  <input class="popover-container__wrapper-input" type="search" name="search" placeholder="Поиск по сайту"
+                    aria-label="Поиск по сайту" required>
+                  <button class="button popover-container__wpapper-btn" type="reset"></button>
+                </div>
+              </form>
+            </div>
+              <span class="menu__item-text">Поиск по сайту</span>
           </div>
           <div class="menu__block-item">
             <button
