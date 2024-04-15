@@ -65,31 +65,18 @@
           <div class="menu__block-item">
             <button
               type="button"
-              class="button menu__item-button menu__item-button- -search"
-            ></button>
+              class="button menu__item-button menu__item-button- -search">
+            </button>
             <div class="popover-container">
-              <form
-                class="popover-container__form"
-                action="https://echo.htmlacademy.ru/"
-                method="get"
-              >
+              <form class="popover-container__form" action="https://echo.htmlacademy.ru/" method="get">
                 <div class="popover-container__form-wrapper">
-                  <input
-                    class="popover-container__wrapper-input"
-                    type="search"
-                    name="search"
-                    placeholder="Поиск по сайту"
-                    aria-label="Поиск по сайту"
-                    required
-                  />
-                  <button
-                    class="button popover-container__wpapper-btn"
-                    type="reset"
-                  ></button>
+                  <input class="popover-container__wrapper-input" type="search" name="search" placeholder="Поиск по сайту"
+                    aria-label="Поиск по сайту" required>
+                  <button class="button popover-container__wpapper-btn" type="reset"></button>
                 </div>
               </form>
             </div>
-            <span class="menu__item-text">Поиск по сайту</span>
+              <span class="menu__item-text">Поиск по сайту</span>
           </div>
           <div class="menu__block-item">
             <button
@@ -113,97 +100,87 @@
         </div>
       </div>
     </header>
-    <main class="main-catalog">
-      <section class="catalog">
-        <h2 class="catalog__title">Каталог товаров</h2>
-        <section class="cards-list">
-          <div class="cards-list__card">
-            <a class="cards-list__card-link">
-              <img
-                class="cards-list__link-pic cards-list__link-pic- -bunny"
-                src="./img/catalog/goods/desk/bunny-desktop.jpg"
-                alt="Зайчик-попрыгайчик"
-              />
-              <h3 class="cards-list__card-link-title">
-                Зайчик-попрыгайчик
-                <p class="cards-list__card-title-text">Рост 30 см, вес 200 г</p>
-              </h3>
-              <div class="cards-list__link-price">
-                <span class="cards-list__price-numb">1 200 руб.</span>
-                <button
-                  class="button cards-list__numb-icon-button"
-                  type="button"
-                ></button>
-              </div>
-            </a>
-          </div>
-          <div class="cards-list__card">
-            <a class="cards-list__card-link">
-              <img
-                class="cards-list__link-pic cards-list__link-pic- -basket"
-                src="./img/catalog/goods/desk/basket-desktop.jpg"
-                alt="Корзинка для белья"
-              />
-              <h3 class="cards-list__card-link-title">
-                Корзинка для белья
-                <p class="cards-list__card-title-text">
-                  Диаметр 15 см, высота 10 см
-                </p>
-              </h3>
-              <div class="cards-list__link-price">
-                <span class="cards-list__price-numb">690 руб.</span>
-                <button
-                  class="button cards-list__numb-icon-button"
-                  type="button"
-                ></button>
-              </div>
-            </a>
-          </div>
-          <div class="cards-list__card">
-            <a class="cards-list__card-link">
-              <img
-                class="cards-list__link-pic cards-list__link-pic- -large"
-                src="./img/catalog/goods/desk/large-desktop.jpg"
-                alt="Большая корзинка для игрушек"
-              />
-              <h3 class="cards-list__card-link-title">
-                Большая корзинка для игрушек
-                <p class="cards-list__card-title-text">
-                  Диаметр 30 см, высота 30 см
-                </p>
-              </h3>
-              <div class="cards-list__link-price">
-                <span class="cards-list__price-numb">1 500 руб.</span>
-                <button
-                  class="button cards-list__numb-icon-button"
-                  type="button"
-                ></button>
-              </div>
-            </a>
-          </div>
+    <main class="main-form">
+        <h1 class="visually-hidden">Вязание на заказ</h1>
+        <section class="form">
+            <h2 class="form__title">Вязание на заказ</h2>
+            <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <form class="form__form" action="https://echo.htmlacademy.ru/courses" metod="get">
+                <div class="form__form-wrapper">
+                    <h3 class="form__wrapper-title">ТИП</h3>
+                    <div class="form__wrapper-input">
+                        <label class="form__input-name">
+                            <input class="form__name-input" type="radio" name="type" value="accessories" checked>
+                            Аксессуар для интерьера
+                        </label>
+                        <label class="form__input-name">
+                            <input class="form__name-input" type="radio" name="type" value="toy">
+                            Детская игрушка
+                        </label>
+                    </div>
+                </div>
+                <div class="form__wrapper-input form__wrapper-input- -dark">
+                    <h3 class="form__wrapper-title">ЦВЕТ</h3>
+                      <div class="form__wrapper-input">
+                        <label class="form__input-name">
+                            <input class="form__name-input" type="checkbox" name="white" checked>Белый
+                        </label>
+                        <label class="form__input-name">
+                            <input class="form__name-input" type="checkbox" name="black">Черный
+                        </label>
+                        <label class="form__input-name">
+                            <input class="form__name-input" type="checkbox" name="grey" checked>Серый
+                        </label>
+                        <label class="form__input-name">
+                            <input class="form__name-input" type="checkbox" name="pink">Розовый
+                        </label>
+                        <label class="form__input-name">
+                            <input class="form__name-input" type="checkbox" name="tiffany">Тиффани
+                        </label>
+                        <label class="form__input-name">
+                            <input class="form__name-input" type="checkbox" name="orange">Оранжевый
+                        </label>
+                      </div>
+                <div class="form__form-wrapper">
+                  <h3 class="form__wrapper-title">ФИО</h3>
+                  <div class="form__wrapper-input">
+                    <label class="form__input-name">Имя:
+                       <input type="text" name="name">
+                    </label>
+                    <label class="form__input-name">Фамилия:
+                      <input type="text" name="surname">
+                    </label>
+                    <label class="form__input-name">Отчество:
+                      <input type="text" name="second-surname">
+                    </label>
+
+                  </div>
+
+                </div>
+
+            </form>
+
         </section>
-      </section>
-      <section class="video"></section>
     </main>
-      <footer class="footer">
-       <section class="contacts">
-         <div class="contacts__adress">
-           <h2 class="contacts__adress-title">Контакты
+    <footer class="footer">
+      <section class="contacts">
+        <div class="contacts__adress">
+          <h2 class="contacts__adress-title">Контакты
             <span class="contacts__title-icon"></span>
-           </h2>
-           <p class="contacts__adress-text">
+          </h2>
+          <p class="contacts__adress-text">
             e-mail:
             <a class="contacts__text-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-           </p>
-           <p class="contacts__adress-text">
+          </p>
+          <p class="contacts__adress-text">
             адрес:
             <p class="contacts__adress-text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
-           </p>
-         </div>
-         <div class="contacts__map"></div>
-         <button class="button button-white contacts__btn" type="button" aria-label="нaпишите нам">нaпишите нам</button>
-       </section>
-       <section class="social">
+          </p>
+        </div>
+        <div class="contacts__map"></div>
+        <button class="button button-white contacts__btn" type="button" aria-label="нaпишите нам">нaпишите нам</button>
+      </section>
+      <section class="social">
         <a class="social__logo-footer" href="#">
           <img src="./img/logo/logo-footer.svg" alt="интернет-магазин Мишка">
         </a>
