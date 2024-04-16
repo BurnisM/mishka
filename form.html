@@ -105,7 +105,7 @@
         <section class="form">
             <h2 class="form__title">Вязание на заказ</h2>
             <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-            <form class="form__form" action="https://echo.htmlacademy.ru/courses" metod="get">
+            <form class="form__form" action="https://echo.htmlacademy.ru/courses" metod="get" name="mishka-form">
                 <div class="form__form-wrapper">
                     <h3 class="form__wrapper-title">ТИП</h3>
                     <div class="form__wrapper-input">
@@ -145,21 +145,34 @@
                   <h3 class="form__wrapper-title">ФИО</h3>
                   <div class="form__wrapper-input">
                     <label class="form__input-name">Имя:
-                       <input type="text" name="name">
+                       <input class="form__name-input-text" type="text" name="name" placeholder="Введите ваше имя*" required>
                     </label>
                     <label class="form__input-name">Фамилия:
-                      <input type="text" name="surname">
+                      <input class="form__name-input-text" type="text" name="surname" placeholder="Укажите фамилию*" required>
                     </label>
                     <label class="form__input-name">Отчество:
-                      <input type="text" name="second-surname">
+                      <input class="form__name-input-text" type="text" name="second-surname" placeholder="Отчество, если желаете">
                     </label>
-
                   </div>
-
                 </div>
-
+                <div class="form__wrapper-input form__wrapper-input- -dark">
+                  <label class="form__input-name form__input-name- -green">ТЕЛ
+                    <input class="form__name-input-text" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                  </label>
+                  <label class="form__input-name form__input-name- -green">E-mail
+                    <input class="form__name-input-text" type="email" name="mail" placeholder="Ваш Email*" required>
+                  </label>
+                </div>
+                <div class="form__wrapper-input">
+                  <label class="form__input-name form__input-name- -green">ДОП
+                    <textarea class="form__name-textarea" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                  </label>
+                </div>
+                <div class="form__wrapper-button">
+                <button class="button button-white form__button" type="submit" aria-label="отправить заказ">ОТПРАВИТЬ ЗАКАЗ</button>
+                 <span class="form__button-label">*Поля обязательны для заполнения</span>
+                </div>
             </form>
-
         </section>
     </main>
     <footer class="footer">
