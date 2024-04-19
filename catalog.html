@@ -1,232 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-    <meta
-      name="keywords"
-      content="мишка интернет-магазин вязаные предметы интерьера вязаные детские игрушки вязание на заказ"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="img/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <script src="script.js"></script>
-    <title>MISHKA</title>
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="visually-hidden">
-        Добро пожаловать в интернет-магазин вязaных вещей и вязаных вещей на
-        заказ "Мишка"
-      </h1>
-      <nav class="menu">
-        <div class="menu__block">
-          <a class="menu__block-link" href="#">
-            <img
-              class="menu__link-logo"
-              src="./img/logo/mishka-logo-desktop.svg"
-              alt="логотип интернет-магазина Мишка"
-            />
-          </a>
-          <div class="menu__block-item">
-            <a class="menu__item-link" href="#">Каталог товаров</a>
-          </div>
-          <div class="menu__block-item">
-            <a class="menu__item-link" href="#">Вязание на заказ</a>
-          </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="keywords"
+    content="мишка интернет-магазин вязаные предметы интерьера вязаные детские игрушки вязание на заказ">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script src="script.js"></script>
+  <title>MISHKA</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="menu">
+      <div class="menu__block">
+        <a class="menu__block-link" href="#">
+          <img class="menu__link-logo" src="./img/logo/mishka-logo-desktop.svg" alt="логотип интернет-магазина Мишка" />
+        </a>
+        <div class="menu__block-item">
+          <a class="menu__item-link" href="#">Каталог товаров</a>
         </div>
-        <div class="menu__block">
-          <div class="menu__block-item">
-            <button
-              type="button"
-              class="button menu__item-button menu__item-button- -search"
-            ></button>
-            <div class="popover-container">
-              <form
-                class="popover-container__form"
-                action="https://echo.htmlacademy.ru/"
-                method="get"
-              >
-                <div class="popover-container__form-wrapper">
-                  <input
-                    class="popover-container__wrapper-input"
-                    type="search"
-                    name="search"
-                    placeholder="Поиск по сайту"
-                    aria-label="Поиск по сайту"
-                    required
-                  />
-                  <button
-                    class="button popover-container__wpapper-btn"
-                    type="reset"
-                  ></button>
-                </div>
-              </form>
-            </div>
-            <span class="menu__item-text">Поиск по сайту</span>
-          </div>
-          <div class="menu__block-item">
-            <button
-              type="button"
-              class="button menu__item-button menu__item-button- -cart"
-              aria-label="открыть корзину"
-            ></button>
-            <span class="menu__item-text">Корзина: пока пуста</span>
-          </div>
-        </div>
-      </nav>
-      <div class="submenu">
-        <div class="submenu__item">
-          <a class="submenu__item-link" href="#">Новые поступления</a>
-        </div>
-        <div class="submenu__item">
-          <a class="submenu__item-link" href="#">Распродажа</a>
-        </div>
-        <div class="submenu__item submenu__item- -delivery">
-          Бесплатная доставка по России
+        <div class="menu__block-item">
+          <a class="menu__item-link" href="#">Вязание на заказ</a>
         </div>
       </div>
-    </header>
-    <main class="main-catalog">
-      <section class="catalog">
-        <h2 class="catalog__title">Каталог товаров</h2>
-        <section class="cards-list">
-          <div class="cards-list__card">
-            <a class="cards-list__card-link">
-              <img
-                class="cards-list__link-pic cards-list__link-pic- -bunny"
-                src="./img/catalog/goods/desk/bunny-desktop.jpg"
-                alt="Зайчик-попрыгайчик"
-              />
-              <h3 class="cards-list__card-link-title">
-                Зайчик-попрыгайчик
-                <p class="cards-list__card-title-text">Рост 30 см, вес 200 г</p>
-              </h3>
-              <div class="cards-list__link-price">
-                <span class="cards-list__price-numb">1 200 руб.</span>
-                <button
-                  class="button cards-list__numb-icon-button"
-                  type="button"
-                ></button>
+      <div class="menu__block">
+        <div class="menu__block-item">
+          <button type="button" class="button menu__item-button menu__item-button- -search"></button>
+          <div class="popover-container">
+            <form class="popover-container__form" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="popover-container__form-wrapper">
+                <input class="popover-container__wrapper-input" type="search" name="search" placeholder="Поиск по сайту"
+                  aria-label="Поиск по сайту" required />
+                <button class="button popover-container__wpapper-btn" type="reset"></button>
               </div>
-            </a>
+            </form>
           </div>
-          <div class="cards-list__card">
-            <a class="cards-list__card-link">
-              <img
-                class="cards-list__link-pic cards-list__link-pic- -basket"
-                src="./img/catalog/goods/desk/basket-desktop.jpg"
-                alt="Корзинка для белья"
-              />
-              <h3 class="cards-list__card-link-title">
-                Корзинка для белья
-                <p class="cards-list__card-title-text">
-                  Диаметр 15 см, высота 10 см
-                </p>
-              </h3>
-              <div class="cards-list__link-price">
-                <span class="cards-list__price-numb">690 руб.</span>
-                <button
-                  class="button cards-list__numb-icon-button"
-                  type="button"
-                ></button>
-              </div>
-            </a>
-          </div>
-          <div class="cards-list__card">
-            <a class="cards-list__card-link">
-              <img
-                class="cards-list__link-pic cards-list__link-pic- -large"
-                src="./img/catalog/goods/desk/large-desktop.jpg"
-                alt="Большая корзинка для игрушек"
-              />
-              <h3 class="cards-list__card-link-title">
-                Большая корзинка для игрушек
-                <p class="cards-list__card-title-text">
-                  Диаметр 30 см, высота 30 см
-                </p>
-              </h3>
-              <div class="cards-list__link-price">
-                <span class="cards-list__price-numb">1 500 руб.</span>
-                <button
-                  class="button cards-list__numb-icon-button"
-                  type="button"
-                ></button>
-              </div>
-            </a>
-          </div>
-        </section>
-      </section>
-      <section class="video"></section>
-    </main>
-      <footer class="footer">
-       <section class="contacts">
-         <div class="contacts__adress">
-           <h2 class="contacts__adress-title">Контакты
-            <span class="contacts__title-icon"></span>
-           </h2>
-           <p class="contacts__adress-text">
-            e-mail:
-            <a class="contacts__text-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-           </p>
-           <p class="contacts__adress-text">
-            адрес:
-            <p class="contacts__adress-text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
-           </p>
-         </div>
-         <div class="contacts__map"></div>
-         <button class="button button-white contacts__btn" type="button" aria-label="нaпишите нам">нaпишите нам</button>
-       </section>
-       <section class="social">
-        <a class="social__logo-footer" href="#">
-          <img src="./img/logo/logo-footer.svg" alt="интернет-магазин Мишка">
-        </a>
-        <ul class="social__social-list">
-          <li class="social__list-item">
-            <a class="social__item-link social__item-link- -vk" href="#"></a>
-          </li>
-          <li class="social__list-item">
-            <a class="social__item-link social__item-link- -yt" href="#"></a>
-          </li>
-          <li class="social__list-item">
-            <a class="social__item-link social__item-link- -tg" href="#"></a>
-          </li>
-        </ul>
-        <div class="social__creator">
-          <p class="social__creator-text">Разработано</p>
-          <span class="social__creator-icon">
-            <a class="social__icon-link" href="#">
-              <img class="social__link-icon" src="./img/icon/footer/htmlacademy.svg">
-            </a>
-          </span>
+          <span class="menu__item-text">Поиск по сайту</span>
+        </div>
+        <div class="menu__block-item">
+          <button type="button" class="button menu__item-button menu__item-button- -cart"
+            aria-label="открыть корзину"></button>
+          <span class="menu__item-text">Корзина: пока пуста</span>
+        </div>
+      </div>
+    </nav>
+    <div class="submenu">
+      <div class="submenu__item">
+        <a class="submenu__item-link" href="#">Новые поступления</a>
+      </div>
+      <div class="submenu__item">
+        <a class="submenu__item-link" href="#">Распродажа</a>
+      </div>
+      <div class="submenu__item submenu__item- -delivery">
+        Бесплатная доставка по России
+      </div>
+    </div>
+  </header>
+  <main class="main-catalog">
+    <section class="catalog">
+      <h2 class="catalog__title">Каталог товаров</h2>
+      <section class="cards-list">
+        <div class="cards-list__card">
+          <a class="cards-list__card-link">
+            <img class="cards-list__link-pic cards-list__link-pic- -bunny"
+              src="./img/catalog/goods/desk/bunny-desktop.jpg" alt="Зайчик-попрыгайчик">
+            <h3 class="cards-list__card-link-title">
+              Зайчик-попрыгайчик
+              <p class="cards-list__card-title-text">Рост 30 см, вес 200 г</p>
+            </h3>
+            <div class="cards-list__link-price">
+              <span class="cards-list__price-numb">1 200 руб.</span>
+              <button class="button cards-list__numb-icon-button" type="button"></button>
+            </div>
+          </a>
+        </div>
+        <div class="cards-list__card">
+          <a class="cards-list__card-link">
+            <img class="cards-list__link-pic cards-list__link-pic- -basket"
+              src="./img/catalog/goods/desk/basket-desktop.jpg" alt="Корзинка для белья">
+            <h3 class="cards-list__card-link-title">
+              Корзинка для белья
+              <p class="cards-list__card-title-text">
+                Диаметр 15 см, высота 10 см
+              </p>
+            </h3>
+            <div class="cards-list__link-price">
+              <span class="cards-list__price-numb">690 руб.</span>
+              <button class="button cards-list__numb-icon-button" type="button"></button>
+            </div>
+          </a>
+        </div>
+        <div class="cards-list__card">
+          <a class="cards-list__card-link">
+            <img class="cards-list__link-pic cards-list__link-pic- -large"
+              src="./img/catalog/goods/desk/large-desktop.jpg" alt="Большая корзинка для игрушек">
+            <h3 class="cards-list__card-link-title">
+              Большая корзинка для игрушек
+              <p class="cards-list__card-title-text">
+                Диаметр 30 см, высота 30 см
+              </p>
+            </h3>
+            <div class="cards-list__link-price">
+              <span class="cards-list__price-numb">1 500 руб.</span>
+              <button class="button cards-list__numb-icon-button" type="button"></button>
+            </div>
+          </a>
         </div>
       </section>
-    </footer>
-  </body>
+    </section>
+    <section class="video"></section>
+  </main>
+  <footer class="footer">
+    <a class="footer__logo" href="#">
+      <img class="footer__logo-img" src="./img/logo/logo-footer.svg" alt="интернет-магазин Мишка">
+    </a>
+    <ul class="footer__social social-list">
+      <li class="social-list__item">
+        <a class="social-list__item-link social-list__item-link--vk" href="#"></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__item-link social-list__item-link--yt" href="#"></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__item-link social-list__item-link--tg" href="#"></a>
+      </li>
+    </ul>
+    <a class="footer__copyright-link" href="#">
+      <span class="footer__copyright-text">Разработано</span>
+      <img class="footer__copyright-icon" src="./img/icon/footer/htmlacademy.svg" alt="htmlacademy">
+    </a>
+  </footer>
+</body>
+
 </html>

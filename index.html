@@ -1,267 +1,214 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-    <meta
-      name="keywords"
-      content="мишка интернет-магазин вязаные предметы интерьера вязаные детские игрушки вязание на заказ"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="img/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <script src="script.js"></script>
-    <title>MISHKA</title>
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="visually-hidden">
-        Добро пожаловать в интернет-магазин вязaных вещей и вязаных вещей на
-        заказ "Мишка"
-      </h1>
-      <nav class="menu">
-        <div class="menu__block">
-          <a class="menu__block-link" href="#">
-            <img
-              class="menu__link-logo"
-              src="./img/logo/mishka-logo-desktop.svg"
-              alt="логотип интернет-магазина Мишка"
-            />
-          </a>
-          <div class="menu__block-item">
-            <a class="menu__item-link" href="#">Каталог товаров</a>
-          </div>
-          <div class="menu__block-item">
-            <a class="menu__item-link" href="#">Вязание на заказ</a>
-          </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="keywords"
+    content="мишка интернет-магазин вязаные предметы интерьера вязаные детские игрушки вязание на заказ">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script src="script.js"></script>
+  <title>MISHKA</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="menu">
+      <div class="menu__block">
+        <a class="menu__block-link" href="#">
+          <img class="menu__link-logo" src="./img/logo/mishka-logo-desktop.svg" alt="логотип интернет-магазина Мишка" />
+        </a>
+        <div class="menu__block-item">
+          <a class="menu__item-link" href="#">Каталог товаров</a>
         </div>
-        <div class="menu__block">
-          <div class="menu__block-item">
-            <button
-              type="button"
-              class="button menu__item-button menu__item-button- -search">
-            </button>
-            <div class="popover-container">
-              <form class="popover-container__form" action="https://echo.htmlacademy.ru/" method="get">
-                <div class="popover-container__form-wrapper">
-                  <input class="popover-container__wrapper-input" type="search" name="search" placeholder="Поиск по сайту"
-                    aria-label="Поиск по сайту" required>
-                  <button class="button popover-container__wpapper-btn" type="reset"></button>
-                </div>
-              </form>
-            </div>
-              <span class="menu__item-text">Поиск по сайту</span>
-          </div>
-          <div class="menu__block-item">
-            <button
-              type="button"
-              class="button menu__item-button menu__item-button- -cart"
-              aria-label="открыть корзину"
-            ></button>
-            <span class="menu__item-text">Корзина: пока пуста</span>
-          </div>
-        </div>
-      </nav>
-      <div class="submenu">
-        <div class="submenu__item">
-          <a class="submenu__item-link" href="#">Новые поступления</a>
-        </div>
-        <div class="submenu__item">
-          <a class="submenu__item-link" href="#">Распродажа</a>
-        </div>
-        <div class="submenu__item submenu__item- -delivery">
-          Бесплатная доставка по России
+        <div class="menu__block-item">
+          <a class="menu__item-link" href="#">Вязание на заказ</a>
         </div>
       </div>
-    </header>
-    <main class="main-index">
-      <section class="hero">
-        <h2 class="hero__title">Милые штуки ручной работы для дома</h2>
-        <div class="hero__wrapper">
-          <button
-            class="button hero__wrapper-button hero__wrapper-button- -interior"
-            type="button"
-            aria-label="Предметы интерьера"
-          >
-            Предметы интерьера
+      <div class="menu__block">
+        <div class="menu__block-item">
+          <button type="button" class="button menu__item-button menu__item-button- -search">
           </button>
-          <button
-            class="button hero__wrapper-button hero__wrapper-button- -toy"
-            type="button"
-            aria-label="Детские игрушки"
-          >
-            Детские игрушки
-          </button>
+          <div class="popover-container">
+            <form class="popover-container__form" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="popover-container__form-wrapper">
+                <input class="popover-container__wrapper-input" type="search" name="search" placeholder="Поиск по сайту"
+                  aria-label="Поиск по сайту" required>
+                <button class="button popover-container__wpapper-btn" type="reset"></button>
+              </div>
+            </form>
+          </div>
+          <span class="menu__item-text">Поиск по сайту</span>
         </div>
-      </section>
-      <section class="product-week">
-        <h2 class="producr-week__title">
-          Вязаные корзинки
-          <span class="product-week__title-sticker">ТОВАР НЕДЕЛИ</span>
+        <div class="menu__block-item">
+          <button type="button" class="button menu__item-button menu__item-button- -cart"
+            aria-label="открыть корзину"></button>
+          <span class="menu__item-text">Корзина: пока пуста</span>
+        </div>
+      </div>
+    </nav>
+    <div class="submenu">
+      <div class="submenu__item">
+        <a class="submenu__item-link" href="#">Новые поступления</a>
+      </div>
+      <div class="submenu__item">
+        <a class="submenu__item-link" href="#">Распродажа</a>
+      </div>
+      <div class="submenu__item submenu__item- -delivery">
+        Бесплатная доставка по России
+      </div>
+    </div>
+  </header>
+  <main class="main-index">
+    <h1 class="visually-hidden">
+      Добро пожаловать в интернет-магазин вязaных вещей и вязаных вещей на
+      заказ "Мишка"
+    </h1>
+    <section class="hero">
+      <h2 class="hero__title">Милые штуки ручной работы для дома</h2>
+      <div class="hero__wrapper">
+        <button class="button hero__wrapper-button hero__wrapper-button- -interior" type="button"
+          aria-label="Предметы интерьера">
+          Предметы интерьера
+        </button>
+        <button class="button hero__wrapper-button hero__wrapper-button- -toy" type="button"
+          aria-label="Детские игрушки">
+          Детские игрушки
+        </button>
+      </div>
+    </section>
+    <section class="product-week">
+      <h2 class="product-week__title">
+        Вязаные корзинки
+        <span class="product-week__title-sticker">ТОВАР НЕДЕЛИ</span>
+      </h2>
+      <div class="product-week__img">
+        <img class="product-week__img-baskets" src="./img/product-week/prod-wk-desc.png" alt="Вязаные корзинки" />
+      </div>
+      <div class="product-week__content">
+        <p class="product-week__content-text">
+          Экологически чистая пряжа, ручная работа. Доступны в шести
+          расцветках и трёх размерах.
+        </p>
+        <div class="product-week__content-options">
+          <p class="product-week__options-text">Цвет: тиффани/серый</p>
+          <p class="product-week__options-text">Диаметр: 25 см</p>
+          <p class="product-week__options-text">Высота: 15 см</p>
+          <p class="product-week__options-text- -price">Цена: 990 руб.</p>
+        </div>
+        <button class="button button-white product-week__options-link" type="button"
+          aria-label="заказать товар">ЗАКАЗАТЬ</a>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__about-block">
+        <h2 class="about__block-title">Коротко о нас:</h2>
+        <div class="about__block-grid">
+          <p class="about__grid-item">
+            <span class="about__item-icon about__item-icon- -materials"></span>
+            <span class="about__item-text">Экологически чистые материалы</span>
+          </p>
+          <p class="about__grid-item">
+            <span class="about__item-icon about__item-icon- -style"></span>
+            <span class="about__item-text">Скандинавский стиль по российской цене</span>
+          </p>
+          <p class="about__grid-item">
+            <span class="about__item-icon about__item-icon- -like"></span>
+            <span class="about__item-text">Увеличивает лайки на фотографиях</span>
+          </p>
+          <p class="about__grid-item">
+            <span class="about__item-icon about__item-icon- -handmade"></span>
+            <span class="about__item-text">Связано вручную с любовью и умилением</span>
+          </p>
+          <p class="about__grid-item">
+            <span class="about__item-icon about__item-icon- -rocket"></span>
+            <span class="about__item-text">Поддержка отечественного производителя</span>
+          </p>
+          <p class="about__grid-item">
+            <span class="about__item-icon about__item-icon- -present"></span>
+            <span class="about__item-text">Поставляется в подарочной упаковке</span>
+          </p>
+        </div>
+      </div>
+      <div class="about__fdback">
+        <h2 class="about__fdback-title">Отзывы
+          <button class="button button-white about__title-btn" type="button"
+            aria-label="написать отзыв">Написать</button>
         </h2>
-        <div class="product-week__img">
-          <img
-            class="product-week__img-baskets"
-            src="./img/product-week/prod-wk-desc.png"
-            alt="Вязаные корзинки"
-          />
-        </div>
-        <div class="product-week__content">
-          <p class="product-week__content-text">
-            Экологически чистая пряжа, ручная работа. Доступны в шести
-            расцветках и трёх размерах.
+        <div class="about__fdback-slider">
+          <p class="about__slider-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+            фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="about__slider-text about__slider-text--sign">Анастасия Красильникова
+            <span class="about__slider-text">@misssssiskras</span>
           </p>
-          <!--<table class="producr-week__content-options">
-            <tr>
-              <td>Цвет:</td>
-              <td>тиффани/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>-->
-          <div class="product-week__content-options">
-            <p class="product-week__options-text">Цвет: тиффани/серый</p>
-            <p class="product-week__options-text">Диаметр: 25 см</p>
-            <p class="product-week__options-text">Высота: 15 см</p>
-            <p class="product-week__options-text- -price">Цена: 990 руб.</p>
+          <div class="about__slider-btn">
+            <a class="about__btn-arrow" href="#"></a>
+            <a class="about__btn-arrow" href="#"></a>
           </div>
-          <button class="button button-white product-week__options-link" type="button" aria-label="заказать товар">ЗАКАЗАТЬ</a>
-        </div>
-      </section>
-      <section class="about">
-        <div class="about__about-block">
-          <h2 class="about__block-title">Коротко о нас:</h2>
-          <div class="about__block-grid">
-            <p class="about__grid-item">
-              <span class="about__item-icon about__item-icon- -materials"></span>
-              <span class="about__item-text">Экологически чистые материалы</span>
-            </p>
-             <p class="about__grid-item">
-              <span class="about__item-icon about__item-icon- -style"></span>
-              <span class="about__item-text">Скандинавский стиль по российской цене</span>
-            </p>
-             <p class="about__grid-item">
-              <span class="about__item-icon about__item-icon- -like"></span>
-              <span class="about__item-text">Увеличивает лайки на фотографиях</span>
-            </p>
-             <p class="about__grid-item">
-              <span class="about__item-icon about__item-icon- -handmade"></span>
-              <span class="about__item-text">Связано вручную с любовью и умилением</span>
-            </p>
-             <p class="about__grid-item">
-              <span class="about__item-icon about__item-icon- -rocket"></span>
-              <span class="about__item-text">Поддержка отечественного производителя</span>
-            </p>
-             <p class="about__grid-item">
-              <span class="about__item-icon about__item-icon- -present"></span>
-              <span class="about__item-text">Поставляется в подарочной упаковке</span>
-            </p>
-          </div>
-        </div>
-        <div class="about__fdback">
-          <h2 class="about__fdback-title">Отзывы
-            <button class="button button-white about__title-btn" type="button" aria-label="написать отзыв">Написать</button>
-          </h2>
-          <div class="about__fdback-slider">
-            <p class="about__slider-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <p class="about__slider-text about__slider-text--sign">Анастасия Красильникова
-              <span class="about__slider-text">@misssssiskras</span>
-            </p>
-            <div class="about__slider-btn">
-              <a class="about__btn-arrow" href="#"></a>
-              <a class="about__btn-arrow" href="#"></a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <section class="contacts">
-        <div class="contacts__adress">
-          <h2 class="contacts__adress-title">Контакты
-            <span class="contacts__title-icon"></span>
-          </h2>
-          <p class="contacts__adress-text">
-            e-mail:
-            <a class="contacts__text-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </p>
-          <p class="contacts__adress-text">
-            адрес:
-            <p class="contacts__adress-text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
-          </p>
-        </div>
-        <div class="contacts__map"></div>
-        <button class="button button-white contacts__btn" type="button" aria-label="нaпишите нам">нaпишите нам</button>
-      </section>
-      <section class="social">
-        <a class="social__logo-footer" href="#">
-          <img src="./img/logo/logo-footer.svg" alt="интернет-магазин Мишка">
-        </a>
-        <ul class="social__social-list">
-          <li class="social__list-item">
-            <a class="social__item-link social__item-link- -vk" href="#"></a>
-          </li>
-          <li class="social__list-item">
-            <a class="social__item-link social__item-link- -yt" href="#"></a>
-          </li>
-          <li class="social__list-item">
-            <a class="social__item-link social__item-link- -tg" href="#"></a>
-          </li>
-        </ul>
-        <div class="social__creator">
-          <p class="social__creator-text">Разработано</p>
-          <span class="social__creator-icon">
-            <a class="social__icon-link" href="#">
-              <img class="social__link-icon" src="./img/icon/footer/htmlacademy.svg">
-            </a>
-          </span>
-        </div>
-      </section>
-    </footer>
-    <section class="modal">
-      <div class="modal__content">
-        <h2 class="modal__content-title">Добавить в корзину
-          <p class="modal__content-title-text">Выберите размер:</p>
-        </h2>
-        <div class="modal__content-btn">
-          <button class="button modal__content-btn-button-size" type="button">S</button>
-          <button class="button modal__content-btn-button-size" type="button">M</button>
-          <button class="button modal__content-btn-button-size" type="button">L</button>
-          <button class="button button__green">Добавить</button>
         </div>
       </div>
     </section>
-  </body>
+    <section class="contacts">
+      <div class="contacts__adress">
+        <h2 class="contacts__adress-title">Контакты
+          <span class="contacts__title-icon"></span>
+        </h2>
+        <p class="contacts__adress-text">
+          e-mail:
+          <a class="contacts__text-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </p>
+        <p class="contacts__adress-text">
+          адрес:
+        <p class="contacts__adress-text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
+      </div>
+      <div class="contacts__map"></div>
+      <button class="button button-white contacts__btn" type="button" aria-label="нaпишите нам">нaпишите нам</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer__logo" href="#">
+      <img class="footer__logo-img" src="./img/logo/logo-footer.svg" alt="интернет-магазин Мишка">
+    </a>
+    <ul class="footer__social social-list">
+      <li class="social-list__item">
+        <a class="social-list__item-link social-list__item-link--vk" href="#"></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__item-link social-list__item-link--yt" href="#"></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__item-link social-list__item-link--tg" href="#"></a>
+      </li>
+    </ul>
+    <a class="footer__copyright-link" href="#">
+      <span class="footer__copyright-text">Разработано</span>
+      <img class="footer__copyright-icon" src="./img/icon/footer/htmlacademy.svg" alt="htmlacademy">
+    </a>
+  </footer>
+  <section class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <p class="modal__text">Выберите размер:</p>
+    <form class="modal__form" method="get" action="https://echo.htmlacademy.ru/courses" name="modal-form">
+      <label class="modal__form-name">
+        <input class="modal__form-name-input modal__form-name-input--s" type="radio" name="s" value="s" checked>s
+      </label>
+      <label>
+        <input class="button modal__content-btn-button-size" type="radio" name="m" value="m">m
+      </label>
+      <label>
+        <input class="button modal__content-btn-button-size" type="radio" name="l" value="l">l
+      </label>
+      <button class="button button--green" type="submit">Добавить</button>
+    </form>
+  </section>
+</body>
+
 </html>
