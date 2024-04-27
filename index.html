@@ -22,7 +22,7 @@
   <header class="header">
     <nav class="header__navigation navigation">
       <a class="navigation__logo-link" href="#">
-        <img class="navigation__logo" src="./img/logo/mishka-logo-desktop.svg" alt="логотип интернет-магазина Мишка" />
+        <img class="navigation__logo" src="./img/logo/mishka-logo-desktop.svg" alt="логотип интернет-магазина Мишка">
       </a>
       <button class="navigation__burger" type="button" aria-label="открыть/закрыть меню">
         <span></span>
@@ -66,106 +66,103 @@
     <section class="hero">
       <h2 class="hero__title">Милые штуки ручной работы для дома</h2>
       <div class="hero__wrapper">
-        <button class="button hero__wrapper-button hero__wrapper-button- -interior" type="button"
-          aria-label="Предметы интерьера">
+        <a class="hero__link hero__link--interior" href="#">
           Предметы интерьера
-        </button>
-        <button class="button hero__wrapper-button hero__wrapper-button- -toy" type="button"
-          aria-label="Детские игрушки">
+        </a>
+        <a class="hero__link hero__link--toy" href="#">
           Детские игрушки
-        </button>
+        </a>
       </div>
     </section>
     <section class="product-week">
-      <h2 class="product-week__title">
-        Вязаные корзинки
-        <span class="product-week__title-sticker">товар недели</span>
-      </h2>
+      <div class="product-week__heading">
+        <h2 class="product-week__title product-week__title--stiker">товар недели</h2>
+        <h3 class="product-week__title">Вязаные корзинки</h3>
+      </div>
       <div class="product-week__img">
-        <img class="product-week__img-baskets" src="./img/product-week/prod-wk-desc.png" alt="Вязаные корзинки" />
+        <img class="product-week__img-baskets" src="./img/product-week/prod-wk-desc.png" alt="Вязаные корзинки">
       </div>
       <div class="product-week__content">
         <p class="product-week__content-text">
           Экологически чистая пряжа, ручная работа. Доступны в шести
           расцветках и трёх размерах.
         </p>
-        <dl class="product-week__content-options">
-          <dt class="product-week__options-text">Цвет:</dt>
-          <dd>тиффани/серый</dd>
-          <dt class="product-week__options-text">Диаметр:</dt>
-          <dd>см</dd>
-          <dt class="product-week__options-text">Высота:</dt>
-          <dd>15 см</dd>
-          <dt class="product-week__options-text--price">Цена:</dt>
-          <dd>990 руб.</dd>
+        <dl class="product-week__content-list">
+          <div class="product-week__list-wrapper">
+            <dt class="product-week__content-item">Цвет:</dt>
+            <dd class="product-week__content-item">тиффани/серый</dd>
+          </div>
+          <div class="product-week__list-wrapper">
+            <dt class="product-week__content-item">Диаметр:</dt>
+            <dd class="product-week__content-item">см</dd>
+          </div>
+          <div class="product-week__list-wrapper">
+            <dt class="product-week__content-item">Высота:</dt>
+            <dd class="product-week__content-item">15 см</dd>
+          </div>
         </dl>
-        <button class="button button-white product-week__options-link" type="button">заказать</button>
+      </div>
+      <div class="product-week__price">
+        <p class="product-week__price-text">Цена: 990 руб.</p>
+        <button class="button button-white product-week__link" type="button">заказать</button>
       </div>
     </section>
     <section class="about">
-      <div class="about__about-block">
-        <h2 class="about__block-title">Коротко о нас:</h2>
-        <div class="about__block-grid">
-          <p class="about__grid-item">
-            <span class="about__item-icon about__item-icon- -materials"></span>
-            <span class="about__item-text">Экологически чистые материалы</span>
-          </p>
-          <p class="about__grid-item">
-            <span class="about__item-icon about__item-icon- -style"></span>
-            <span class="about__item-text">Скандинавский стиль по российской цене</span>
-          </p>
-          <p class="about__grid-item">
-            <span class="about__item-icon about__item-icon- -like"></span>
-            <span class="about__item-text">Увеличивает лайки на фотографиях</span>
-          </p>
-          <p class="about__grid-item">
-            <span class="about__item-icon about__item-icon- -handmade"></span>
-            <span class="about__item-text">Связано вручную с любовью и умилением</span>
-          </p>
-          <p class="about__grid-item">
-            <span class="about__item-icon about__item-icon- -rocket"></span>
-            <span class="about__item-text">Поддержка отечественного производителя</span>
-          </p>
-          <p class="about__grid-item">
-            <span class="about__item-icon about__item-icon- -present"></span>
-            <span class="about__item-text">Поставляется в подарочной упаковке</span>
-          </p>
+      <h2 class="about__title">Коротко о нас:</h2>
+      <ul class="about__list">
+        <li class="about__list-item about__list-item--materials">
+          <span class="about__item-text">Экологически чистые материалы</span>
+        </li>
+        <li class="about__list-item about__list-item--style">
+          <span class="about__item-text">Скандинавский стиль по российской цене</span>
+        </li>
+        <li class="about__list-item about__list-item--like">
+          <span class="about__item-text">Увеличивает лайки на фотографиях</span>
+        </li>
+        <li class="about__list-item about__list-item--handmade">
+          <span class="about__item-text">Связано вручную с любовью и умилением</span>
+        </li>
+        <li class="about__list-item about__list-item--rocket">
+          <span class="about__item-text">Поддержка отечественного производителя</span>
+        </li>
+        <li class="about__list-item about__list-item--present">
+          <span class="about__item-text">Поставляется в подарочной упаковке</span>
+        </li>
+      </ul>
+    </section>
+    <section class="feedback">
+      <h2 class="feedback-title">Отзывы</h2>
+      <button class="button button-white feedback-button" type="button">Написать</button>
+      <div class="feedback__slider">
+        <p class="feedback__slider-text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+          лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+          фотографии сразу стали более стильными, а также набирают больше лайков!
+        </p>
+        <div class="feedback__user-info">
+          <h3 class="feedback__user-title">Анастасия Красильникова</h3>
+          <span class="feedback__user-nickname">@misssssiskras</span>
         </div>
-      </div>
-      <div class="about__fdback">
-        <h2 class="about__fdback-title">Отзывы
-          <button class="button button-white about__title-btn" type="button"
-            aria-label="написать отзыв">Написать</button>
-        </h2>
-        <div class="about__fdback-slider">
-          <p class="about__slider-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-            фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <p class="about__slider-text about__slider-text--sign">Анастасия Красильникова
-            <span class="about__slider-text">@misssssiskras</span>
-          </p>
-          <div class="about__slider-btn">
-            <a class="about__btn-arrow" href="#"></a>
-            <a class="about__btn-arrow" href="#"></a>
-          </div>
+        <div class="feedback__slider-button">
+          <button class="feedback__button-arrow" type="button" aria-label="вперед"></button>
+          <button class="feedback__button-arrow" type="button" aria-label="назад"></button>
         </div>
       </div>
     </section>
     <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
       <div class="contacts__adress">
-        <h2 class="contacts__adress-title">Контакты
-          <span class="contacts__title-icon"></span>
-        </h2>
-        <p class="contacts__adress-text">
-          e-mail:
+        <div class="contacts__adress-wrapper">
+          <p class="contacts__adress-text">e-mail:</p>
           <a class="contacts__text-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </p>
-        <p class="contacts__adress-text">
-          адрес:
-        <p class="contacts__adress-text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
+        </div>
+        <div class="contacts__adress-wrapper">
+          <p class="contacts__adress-text">адрес:</p>
+          <p class="contacts__adress-text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
+        </div>
       </div>
       <div class="contacts__map"></div>
-      <button class="button button-white contacts__btn" type="button" aria-label="нaпишите нам">нaпишите нам</button>
+      <button class="button button-white contacts__button" type="button">нaпишите нам</button>
     </section>
   </main>
   <footer class="footer">

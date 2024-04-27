@@ -20,60 +20,54 @@
 
 <body>
   <header class="header">
-    <nav class="menu">
-      <div class="menu__block">
-        <a class="menu__block-link" href="#">
-          <img class="menu__link-logo" src="./img/logo/mishka-logo-desktop.svg" alt="логотип интернет-магазина Мишка">
-        </a>
-        <div class="menu__block-item">
-          <a class="menu__item-link" href="#">Каталог товаров</a>
-        </div>
-        <div class="menu__block-item">
-          <a class="menu__item-link" href="#">Вязание на заказ</a>
-        </div>
-      </div>
-      <div class="menu__block">
-        <div class="menu__block-item">
-          <button type="button" class="button menu__item-button menu__item-button- -search">
-          </button>
-          <div class="popover-container">
-            <form class="popover-container__form" action="https://echo.htmlacademy.ru/" method="get">
-              <div class="popover-container__form-wrapper">
-                <input class="popover-container__wrapper-input" type="search" name="search" placeholder="Поиск по сайту"
-                  aria-label="Поиск по сайту" required>
-                <button class="button popover-container__wpapper-btn" type="reset"></button>
-              </div>
-            </form>
-          </div>
-          <span class="menu__item-text">Поиск по сайту</span>
-        </div>
-        <div class="menu__block-item">
-          <button type="button" class="button menu__item-button menu__item-button- -cart"
-            aria-label="открыть корзину"></button>
-          <span class="menu__item-text">Корзина: пока пуста</span>
-        </div>
-      </div>
-    </nav>
-    <div class="submenu">
-      <div class="submenu__item">
-        <a class="submenu__item-link" href="#">Новые поступления</a>
-      </div>
-      <div class="submenu__item">
-        <a class="submenu__item-link" href="#">Распродажа</a>
-      </div>
-      <div class="submenu__item submenu__item- -delivery">
+    <nav class="header__navigation navigation">
+      <a class="navigation__logo-link" href="#">
+        <img class="navigation__logo" src="./img/logo/mishka-logo-desktop.svg" alt="логотип интернет-магазина Мишка">
+      </a>
+      <button class="navigation__burger" type="button" aria-label="открыть/закрыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a class="navigation" href="#">Каталог товаров</a>
+        </li>
+        <li class="navigation__list-item">
+          <a class="navigation__item-link" href="#">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__item-link" href="#" aria-label="Поиск по сайту">Поиск по сайту</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__item-link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__item-link" href="#">Новые поступления</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__item-link" href="#">Распродажа</a>
+        </li>
+      </ul>
+      <span class="navigation__item-delivery">
         Бесплатная доставка по России
-      </div>
-    </div>
+      </span>
+    </nav>
   </header>
   <main class="main-form">
+    <section class="hero hero--inner">
+      <h1 class="hero-title">Вязание на заказ</h1>
+    </section>
     <section class="form">
-      <h1 class="form__title">Вязание на заказ</h1>
       <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся
         с вами, чтобы уточнить детали.</p>
       <form class="form__form" action="https://echo.htmlacademy.ru/courses" method="get" name="mishka-form">
         <div class="form__form-wrapper">
-          <h2 class="form__wrapper-title">ТИП</h2>
+          <h2 class="form__wrapper-title">тип</h2>
           <div class="form__wrapper-input">
             <label class="form__input-name">
               <input class="form__name-input" type="radio" name="type" value="accessories" checked>
